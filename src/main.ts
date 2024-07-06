@@ -27,7 +27,6 @@ app.post('/api/token', async (req, res) => {
 	res.json({ access_token })
 })
 
-app.use('/', express.static(__dirname + '/public'))
 app.use(express.static(__dirname + '/../dist'))
 app.listen(PORT, () => {
 	console.log(`サーバーが${PORT}番ポートで起動しました`)

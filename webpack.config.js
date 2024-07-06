@@ -1,15 +1,16 @@
 module.exports = {
 	mode: 'development',
-	entry: './src/index.ts',
+	entry: './src/index.tsx',
 	module: {
 		rules: [
 			{
-				test: /\.ts$/,
+				test: /.(.jsx?|.tsx?)$/,
+				exclude: /node_modules/,
 				use: 'ts-loader',
 			},
 		],
 	},
 	resolve: {
-		extensions: ['.ts', '.js'],
+		extensions: ['.js', '.jsx', '.ts', '.tsx'],
 	},
 }
