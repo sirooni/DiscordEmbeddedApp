@@ -12,5 +12,14 @@ export const useDiscordSdk = () => {
 		},
 		[discordSdk]
 	)
-	return { log }
+
+	const openLink = useCallback(
+		async (url: string) => {
+			await discordSdk.ready()
+			discordSdk.commands.openExternalLink({ url })
+		},
+		[discordSdk]
+	)
+
+	return { log, openLink }
 }
