@@ -8,8 +8,9 @@ export const TitlePage: React.FC = () => {
 			<div className='w-5/6 gap-8 grid grid-cols-1 lg:grid-cols-2'>
 				<GameCard
 					src=''
-					title='タイトル'
-					description='なんか説明文とか書くところ'
+					title='Discord SDKのテスト'
+					description='Discordの各種機能テスト'
+					link='/test-discord-sdk/'
 				/>
 			</div>
 		</div>
