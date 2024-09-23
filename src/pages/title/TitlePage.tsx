@@ -1,7 +1,7 @@
 import React from 'react'
 import { GameCard } from './GameCard'
 
-export const TitlePage: FC = () => {
+export const TitlePage: React.FC = () => {
 	return (
 		<div className='flex flex-col gap-8 justify-center items-center'>
 			<h1 className='text-2xl font-bold text-main'>ゲーム置き場</h1>

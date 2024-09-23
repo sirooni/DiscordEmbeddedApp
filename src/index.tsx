@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { TitlePage } from './pages/title/TitlePage'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-const Page: FC<{}> = () => {
+const Page: React.FC = () => {
 	return (
 		<BrowserRouter>
 			<div className='w-full h-full bg-background p-4 select-none'>
