@@ -8,7 +8,7 @@ export const TitlePage: React.FC = () => {
         <GameCard
           thumnail={<SDKTestThumnai />}
           title='Discord SDKのテスト'
-          description='Discordの各種機能テスト'
+          description='Discord SDKでできることを試すところ'
           link='/test-discord-sdk/'
         />
       </div>
